@@ -165,13 +165,13 @@
                  <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Master</span>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link menu-link {{ request()->is('users*') ? 'active' : '' }}" aria-haspopup="true"
-                         href="#sidebarPages" data-bs-toggle="collapse" role="button"
-                         aria-expanded=" {{ request()->is('users*') ? 'true' : 'false' }}"
+                     <a class="nav-link menu-link {{ request()->is('users*', 'employe*') ? 'active' : '' }}"
+                         aria-haspopup="true" href="#sidebarPages" data-bs-toggle="collapse" role="button"
+                         aria-expanded=" {{ request()->is('users*', 'employe*') ? 'true' : 'false' }}"
                          aria-controls="sidebarPages">
                          <i class="bx bx-cog"></i> <span data-key="t-pages">Master</span>
                      </a>
-                     <div class="collapse menu-dropdown {{ request()->is('users*') ? 'show' : '' }}"
+                     <div class="collapse menu-dropdown {{ request()->is('users*', 'employee*') ? 'show' : '' }}"
                          id="sidebarPages">
                          <ul class="nav nav-sm flex-column">
                              <li class="nav-item">
@@ -179,6 +179,14 @@
                                      class="nav-link {{ request()->is('users*') ? 'active' : '' }}"
                                      data-key="t-starter">
                                      Input User </a>
+                             </li>
+                         </ul>
+                         <ul class="nav nav-sm flex-column">
+                             <li class="nav-item">
+                                 <a href="{{ route('employee.create') }}"
+                                     class="nav-link {{ request()->is('employee*') ? 'active' : '' }}"
+                                     data-key="t-starter">
+                                     Input Employee </a>
                              </li>
                          </ul>
                      </div>

@@ -25,3 +25,6 @@ Route::get('/dashboard', function () {
 Route::get('/users/create', function () {
     return view('users.create');
 })->name('users.create');
+Route::get('/employee/create', function () {
+    return view('employee.create');
+})->name('employee.create');

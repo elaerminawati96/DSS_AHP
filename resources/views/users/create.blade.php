@@ -1,8 +1,8 @@
-@extends('layout.app', ['breadcrumbs' => 'Master', 'sub_breadcrumbs' => 'Input User'])
+@extends('layout.app', ['title' => 'Input User', 'breadcrumbs' => 'Master', 'sub_breadcrumbs' => 'Input User'])
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Input User</h4>
+            <h4 class="card-title mb-0">Input User</h4>
         </div>
         <div class="card-body">
             <div class="form mb-2">
@@ -79,10 +79,12 @@
                             <option>Deactive</option>
                         </select>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" class="mt-5 btn btn-primary">Save</button>
-                    </div>
                 </div>
+            </div>
+            <div class="d-flex align-items-start gap-3 mt-4">
+                <button type="button" class="btn btn-primary btn-label right ms-auto nexttab nexttab"
+                    data-nexttab="pills-info-desc-tab"><i
+                        class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Save</button>
             </div>
         </div>
     </div>
