@@ -156,7 +156,7 @@
                  </li>
                  <li class="nav-item">
                      <a class="nav-link menu-link {{ request()->is('dashboard') ? 'active' : '' }}"
-                         href="{{ route('dashboard') }}">
+                         href="{{ route('index') }}">
                          <i class="ri-dashboard-line"></i> <span data-key="t-widgets">Dashboard</span>
                      </a>
                  </li>
@@ -173,7 +173,7 @@
                      </a>
                      <div class="collapse menu-dropdown {{ request()->is('users*', 'employee*') ? 'show' : '' }}"
                          id="sidebarPages">
-                         <ul class="nav nav-sm flex-column">
+                         {{-- <ul class="nav nav-sm flex-column">
                              <li class="nav-item">
                                  <a href="{{ route('users.create') }}"
                                      class="nav-link {{ request()->is('users*') ? 'active' : '' }}"
@@ -188,7 +188,7 @@
                                      data-key="t-starter">
                                      Input Employee </a>
                              </li>
-                         </ul>
+                         </ul> --}}
                      </div>
                  </li>
              </ul>
