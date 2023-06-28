@@ -21,4 +21,27 @@ class AHPController extends Controller
     {
         return view('apps._subjects._index');
     }
+
+    public function createProker($subject, Request $request)
+    {
+        return view('apps._subjects._proker');
+    }
+
+    public function createCandidateCriteria($subject, Request $request)
+    {
+        return view('apps._subjects._index_candidate');
+    }
+
+    public function createCandidate($subject, Request $request)
+    {
+        return view('apps._subjects._candidate');
+    }
+
+    public function detail($id){
+        return view('apps._schedules._detail', ['id' => $id]);
+    }
+
+    public function result($id){
+        return view('apps._schedules._result', ['id' => $id]);
+    }
 }

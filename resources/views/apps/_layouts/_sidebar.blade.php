@@ -9,7 +9,7 @@
     <li class="menu-item" data-menu="subject">
       <a href="{{ route('schedules.create') }}" class="menu-link">
         <i class="menu-icon tf-icons bx bx-detail"></i>
-        <div data-i18n="Analytics">Create Schedule</div>
+        <div data-i18n="Analytics">Create Subject</div>
       </a>
     </li>
     <li class="menu-item" data-menu="schedules">

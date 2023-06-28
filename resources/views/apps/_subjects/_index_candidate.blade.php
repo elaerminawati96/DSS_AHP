@@ -7,7 +7,7 @@
         <li class="breadcrumb-item">
           <a href="javascript:void(0);">Create Criteria</a>
       </li>
-        <li class="breadcrumb-item active">Proker</li>
+        <li class="breadcrumb-item active">Candidate</li>
     </ol>
 @endsection
 @section('css')
@@ -29,13 +29,13 @@
           <form>
             <div class="mb-3">
               <label class="form-label" for="basic-default-fullname">Subject Name</label>
-              <input type="text" class="form-control" id="basic-default-fullname" />
+              <input type="text" class="form-control" id="basic-default-fullname" disabled placeholder="S1" />
             </div>
             <div class="mb-3">
               <label class="form-label" for="basic-default-message">Description</label>
               <textarea
                 id="basic-default-message"
-                class="form-control"
+                class="form-control" disabled placeholder="Description S1"
               ></textarea>
             </div>
           </form>
@@ -46,18 +46,18 @@
     <div class="col-md-8">
       <div class="card mb-6">
         <div class="card-header d-flex justify-content-between align-items-center">
-          <h5 class="mb-0">Criteria Proker</h5>
+          <h5 class="mb-0">Criteria Candidate</h5>
         </div>
         <div class="card-body">
           <form>
             <div class="row">
                 <div class="col-md-6">
                     <label class="form-label" for="basic-default-fullname">Name *</label>
-                    <input type="text" class="form-control" id="basic-default-fullname" placeholder="John Doe" />
+                    <input type="text" class="form-control" id="basic-default-fullname"/>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label" for="basic-default-fullname">Rate *</label>
-                    <input type="text" class="form-control" id="basic-default-fullname" placeholder="John Doe" />
+                    <input type="number" step="0.1" class="form-control" id="basic-default-fullname" />
                 </div>
                 <div class="col-md-6">
                     <br>
@@ -65,7 +65,7 @@
                    <select class="form-select">
                         <option value="">Choose Category</option>
                         <option value="bobot proker">Bobot Proker</option>
-                        <option value="bobot karyawan">Bobot Karyawan</option>
+                        <option value="bobot karyawan" selected>Bobot Karyawan</option>
                    </select>
                 </div>
                 <div class="col-md-6">
@@ -175,7 +175,8 @@
                   </div>
             </div>
             <div class="col-md-12">
-                <a href="{{ route('schedules.create.proker', ['subject' => 1]) }}" class="btn btn-success pull-right" style="margin-bottom:15px;">Next</a>
+                <a href="{{ route('schedules.create.candidate.input', ['subject' => 1]) }}" class="btn btn-success pull-right" style="margin-bottom:15px;">Next</a>
+                <a href="{{ route('schedules.create.proker', ['subject' => 1]) }}" class="btn btn-success pull-right" style="margin-bottom:15px;">Prev</a>
             </div>
         </div>
     </div>

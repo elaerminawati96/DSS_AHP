@@ -58,7 +58,7 @@
                                 </td>
                                 <td><span class="badge bg-label-primary me-1">Complete</span></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-info">Details</button>
+                                    <a href="{{ route('schedules.detail', ['id' => 'S1']) }}" type="button" class="btn btn-outline-info">Details</a>
                                 </td>
                                 <td>
                                 <div class="dropdown">
@@ -80,7 +80,7 @@
                                 </td>
                                 <td><span class="badge bg-label-primary me-1">Incoming</span></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-info">Details</button>
+                                    <a href="{{ route('schedules.detail', ['id' => 'S2']) }}" type="button" class="btn btn-outline-info">Details</a>
                                 </td>
                                 <td>
                                 <div class="dropdown">
@@ -119,20 +119,8 @@
                             ><i class="tf-icon bx bx-chevron-left"></i
                         ></a>
                         </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">1</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">2</a>
-                        </li>
                         <li class="page-item active">
-                        <a class="page-link" href="javascript:void(0);">3</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">4</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">5</a>
+                        <a class="page-link">1</a>
                         </li>
                         <li class="page-item next">
                         <a class="page-link" href="javascript:void(0);"
